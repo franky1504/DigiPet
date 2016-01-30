@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  VMS_Visitor
+//
+//  Created by i_feyuwu on 2015/12/7.
+//  Copyright © 2015年 fet. All rights reserved.
+//
+
+#ifdef __OBJC__
+#endif
+
+#ifdef DEBUG
+#   define NSLog(fmt, ...) NSLog((@"%@ [Line %d] " fmt),[[NSString stringWithUTF8String:__FILE__] lastPathComponent],__LINE__,##__VA_ARGS__)
+
+#else
+#   define NSLog(...)
+#endif
+
+#define petImgWidth 112
+#define petImgHeight 115
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+
+#define ICON_PADDING 20
+#define ICON_SIZE 85
